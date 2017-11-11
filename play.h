@@ -6,33 +6,32 @@ const char MAIN_page[] PROGMEM = R"=====(
       <title>Forever alone ping pong</title>
       <style media="screen">
         html {
-          background-color:#89D0BE;
+          background-color:#000000;
         }
         #score {
           text-align: center;
-          font-size: 20em;
-          margin:90px 0px 10px 0px;
+          font-size: 4em;
+          margin:0px 0px 0px 0px;
           font-family: sans-serif;
           color:white;
-          text-shadow:5px 5px #00A1A3;
+          
         }
         #score.game-over {
-          font-size:12em;
+          font-size:4em;
         }
         #message {
           display:none;
           text-align: center;
-          font-size: 8em;
+          font-size: 4em;
           font-family: sans-serif;
-          color:white;
-          margin-top:5px;
-          text-shadow:5px 5px #00A1A3;
+          color:white;                    
           text-decoration: blink;
         }
         #message.active, #score.game-over {
           display:block;
           animation: blink-animation 1.5s steps(5, start) infinite;
           -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
+          margin:0px;
         }
         @keyframes blink-animation {
           to {
